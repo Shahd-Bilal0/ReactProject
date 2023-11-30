@@ -1,13 +1,7 @@
 import React from "react";
 
 const WrapperCard = ({ children }) => {
-  const targetsStyle = {};
-
-  return (
-    <div className="targets" style={targetsStyle}>
-      {children}
-    </div>
-  );
+  return <div className="targets">{children}</div>;
 };
 
 export default WrapperCard;
