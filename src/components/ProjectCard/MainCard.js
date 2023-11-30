@@ -1,7 +1,6 @@
 import React from "react";
-import WrapperCard from "./WrapperCard";
 
-const MainCard = () => {
+const MainCard = ({ heading, description, children }) => {
   const mainCard = {
     borderRadius: "10px",
     backgroundColor: "white",
@@ -20,9 +19,9 @@ const MainCard = () => {
   };
   return (
     <div className="mainCard" style={mainCard}>
-      <h2 style={headingStyle}>Tickets Statistics</h2>
-      <p style={paragraphStyle}>Everything About Support Tickets</p>
-      <WrapperCard />
+      <h2 style={headingStyle}>{heading}</h2>
+      <p style={paragraphStyle}>{description}</p>
+      {children}
     </div>
   );
 };
