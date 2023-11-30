@@ -1,7 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenNib } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const TicketCard = ({ icon, count, label, color }) => {
   const boxStyle = {
     border: "1px solid #ccc",
@@ -26,7 +24,7 @@ const TicketCard = ({ icon, count, label, color }) => {
   };
   return (
     <div className="box" style={boxStyle}>
-      <FontAwesomeIcon icon={faPenNib} style={iconStyle} />
+      <FontAwesomeIcon icon={icon} style={iconStyle} />
       <span className="count" style={countStyle}>
         {count}
       </span>

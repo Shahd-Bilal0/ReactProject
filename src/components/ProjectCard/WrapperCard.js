@@ -11,7 +11,7 @@ const WrapperCard = () => {
   return (
     <div className="tickets" style={ticketsStyle}>
       <TicketCard
-        icon="fa-solid fa-cart-shopping"
+        icon="fa-rectangle-list fa-2x"
         count={2500}
         label="Total"
         color="orange"
