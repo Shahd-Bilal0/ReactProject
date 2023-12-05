@@ -3,11 +3,13 @@ import MainCard from "./components/ProjectCard/MainCard";
 import TicketsWrapper from "./components/ProjectCard/TicketsWrapper";
 import TicketCard from "./components/ProjectCard/TicketCard";
 import TargetCard from "./components/ProjectCard/TargetCard";
+import UseState from "./components/ProjectCard/UseState";
 import "./App.css";
+
 const App = () => {
   return (
     <div className="wrapper">
-      <MainCard heading="Main card Targets" description="second component">
+      <MainCard heading="Main card Targets" description="first component">
         <TargetCard
           icon="fa-dollar-sign"
           color="blue"
@@ -33,7 +35,7 @@ const App = () => {
           value="12"
         />
       </MainCard>
-      <MainCard heading="Main Card Statistics" description="first component">
+      <MainCard heading="Main Card Statistics" description="second component">
         <TicketsWrapper>
           <TicketCard
             icon="fa-rectangle-list fa-2x"
@@ -60,6 +62,9 @@ const App = () => {
             color="red"
           />
         </TicketsWrapper>
+      </MainCard>
+      <MainCard heading="Main Card useState" description="third component">
+        <UseState />
       </MainCard>
     </div>
   );
