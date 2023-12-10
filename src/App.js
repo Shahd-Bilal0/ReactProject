@@ -38,7 +38,6 @@ const App = () => {
             ))}
         </TicketsWrapper>
       </MainCard>
-
       <MainCard heading="Main Card useState" description="third component">
         <UseState />
       </MainCard>
