@@ -3,7 +3,7 @@
     {
       "icon": "fa-dollar-sign",
       "color": "blue",
-      "background": "rgb(0 117 255 / 20%)",
+      "background": "rgb(0 118 255 / 20%)",
       "progress": "90%",
       "category": "Money",
       "value": "$20.000"
