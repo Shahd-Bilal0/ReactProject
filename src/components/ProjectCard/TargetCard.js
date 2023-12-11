@@ -1,21 +1,20 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./TargetCard.css";
-const TargetRow = (props) => {
+const TargetRow = ({ target }) => {
   return (
     <div className="target">
       <div
         className="icons"
-        style={{ color: props.color, backgroundColor: props.background }}
+        style={{ color: target.color, backgroundColor: target.background }}
       >
-        <FontAwesomeIcon className="icon" icon={props.icon} />
+        <FontAwesomeIcon className="icon" icon={target.icon} />
       </div>
       <div className="details">
-        <span className="category">{props.category}</span>
-        <span className="value">{props.value}</span>
-        <div className="progress" style={{ background: props.background }}>
+        <span className="category">{target.category}</span>
+        <span className="value">{target.value}</span>
+        <div className="progress" style={{ background: target.background }}>
           <span
-            style={{ width: props.progress, backgroundColor: props.color }}
+            style={{ width: target.progress, backgroundColor: target.color }}
           ></span>
         </div>
       </div>

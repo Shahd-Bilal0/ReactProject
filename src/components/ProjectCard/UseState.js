@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button, FormControl } from "react-bootstrap";
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./UseState.css";
 const UseState = () => {

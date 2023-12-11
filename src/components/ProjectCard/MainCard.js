@@ -1,5 +1,3 @@
-import React from "react";
-
 const MainCard = ({ heading, description, children }) => {
   return (
     <div className="rounded-2 p-5 bg-white">

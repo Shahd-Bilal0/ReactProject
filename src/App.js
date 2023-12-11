@@ -24,7 +24,7 @@ const App = () => {
         {targetPending && <div>Loading data...</div>}
         {targetsData &&
           targetsData.map((target, index) => (
-            <TargetCard key={index} {...target} />
+            <TargetCard key={index} target={target} />
           ))}
       </MainCard>
       <MainCard heading="Main Card Statistics" description="second component">
