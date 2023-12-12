@@ -1,7 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Dashboard from "./pages/Dashboard";
+import Courses from "./pages/Courses";
+import Profile from "./pages/Profile";
+import Projects from "./pages/Projects";
+import { Route, Switch, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 const Content = () => {
-  let title = "Dashboard";
+  const location = useLocation();
+  const [title, setTitle] = useState("Dashboard");
+
+  useEffect(() => {
+    const pathParts = location.pathname.split("/");
+    setTitle(pathParts[1] || "Dashboard");
+  }, [location.pathname]);
+
   return (
     <div className="content">
       <div className="head">
@@ -10,7 +22,20 @@ const Content = () => {
         </span>
       </div>
       <h1 className="pageTitle">{title}</h1>
-      <Dashboard />
+      <Switch>
+        <Route exact path="/">
+          <Dashboard />
+        </Route>
+        <Route exact path="/courses">
+          <Courses />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
+        </Route>
+        <Route exact path="/projects">
+          <Projects />
+        </Route>
+      </Switch>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = () => {
@@ -7,28 +7,28 @@ const Sidebar = () => {
       <h3 className="text">Shahd</h3>
       <ul>
         <li>
-          <a className="active link" href="/">
+          <Link className="active link" to="/">
             <FontAwesomeIcon icon="fa-chart-bar" />
             <span>Dashboard</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link" href="/">
+          <Link className="link" to="/courses">
             <FontAwesomeIcon icon="fa-graduation-cap" />
             <span>Courses</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link" href="/">
+          <Link className="link" to="/profile">
             <FontAwesomeIcon icon="fa-user" />
             <span>Profile</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link" href="/">
+          <Link className="link" to="/projects">
             <FontAwesomeIcon icon="fa-diagram-project" />
             <span>Projects</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
