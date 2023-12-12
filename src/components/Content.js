@@ -11,6 +11,7 @@ const Content = () => {
 
   useEffect(() => {
     const pathParts = location.pathname.split("/");
+    console.log(location.pathname);
     setTitle(pathParts[pathParts.length - 1] || "Dashboard");
   }, [location.pathname]);
 
