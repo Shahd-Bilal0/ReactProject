@@ -1,6 +1,120 @@
+.page {
+  display: flex;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+/* Start Sidebar */
+.sidebar {
+  position: relative;
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px #ddd;
+}
+.sidebar .text {
+  position: relative;
+  margin-top: 0;
+  text-align: center;
+}
+.sidebar .text {
+  margin: 30px;
+  font-weight: bold;
+}
+.sidebar .link {
+  display: flex;
+  align-items: center;
+  font-size: 14;
+  color: black;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.sidebar .link:hover,
+.sidebar .link.active {
+  background-color: #f6f6f6;
+}
+.sidebar .link span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+/* End Sidebar */
+
+/* Start Content */
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+.content .head {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content .head .notification {
+  position: relative;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.content .head .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  right: -4px;
+  top: -3px;
+}
+.content .pageTitle {
+  position: relative;
+  margin: 20px 20px 40px;
+}
+.content .pageTitle::after,
+.content .pageTitle::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.content .pageTitle::before {
+  background-color: white;
+  width: 120px;
+}
+.content .pageTitle::after {
+  background-color: black;
+  width: 40px;
+}
+/* End Content */
+
+/* Start Dashboard */
 .wrapper {
-  margin: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+/* End Dashboard */
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .sidebar {
+    width: 100px;
+  }
+  .sidebar .text {
+    font-size: 17px;
+    margin: 30px 10px;
+  }
+  .sidebar .link {
+    justify-content: center;
+  }
+  .sidebar .link span {
+    display: none;
+  }
 }

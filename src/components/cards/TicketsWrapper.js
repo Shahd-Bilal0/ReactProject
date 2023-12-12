@@ -1,4 +1,4 @@
 const TicketsWrapper = ({ children }) => {
-  return <div className="d-flex flex-wrap gap-3">{children}</div>;
+  return <div className="ticketWrapper">{children}</div>;
 };
 export default TicketsWrapper;

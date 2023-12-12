@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./TicketCard.css";
 const TicketCard = (props) => {
   return (
-    <div className="box">
+    <div className="ticket">
       <FontAwesomeIcon
         className="icon"
         icon={props.icon}

@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./TargetCard.css";
 const TargetRow = ({ target }) => {
   return (
     <div className="target">
