@@ -11,7 +11,7 @@ const Content = () => {
 
   useEffect(() => {
     const pathParts = location.pathname.split("/");
-    setTitle(pathParts[1] || "Dashboard");
+    setTitle(pathParts[pathParts.length - 1] || "Dashboard");
   }, [location.pathname]);
 
   return (
