@@ -5,7 +5,7 @@ import Content from "./components/Content";
 import { BrowserRouter as Router } from "react-router-dom";
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ReactProject">
       <div className="page">
         <Sidebar />
         <Content />
