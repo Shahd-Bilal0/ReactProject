@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import FetchData from "../../FetchData";
 import CourseCard from "../cards/CourseCard";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 const Courses = () => {
   const {
     data: coursesData,
@@ -26,7 +27,9 @@ const Courses = () => {
             alignItems: "center",
           }}
         >
-          <Button variant="primary">Add New Course</Button>
+          <Link to="/newCourse">
+            <Button variant="primary">Add New Course</Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const CourseCard = ({ course }) => {
         <p className="description">{course.description}</p>
       </div>
       <div className="info">
-        <Link to={`/CourseInfo/${course.id}`} className="title">
+        <Link to={`/courseInfo/${course.id}`} className="title">
           Course Info
         </Link>
 

@@ -4,6 +4,7 @@ import Courses from "./pages/Courses";
 import Profile from "./pages/Profile";
 import Projects from "./pages/Projects";
 import CourseInfo from "./pages/CourseInfo";
+import NewCourse from "./pages/NewCourse";
 import { Route, Switch } from "react-router-dom";
 
 const Content = () => {
@@ -27,8 +28,11 @@ const Content = () => {
         <Route exact path="/projects">
           <Projects />
         </Route>
-        <Route exact path="/CourseInfo/:id">
+        <Route exact path="/courseInfo/:id">
           <CourseInfo />
+        </Route>
+        <Route exact path="/newCourse">
+          <NewCourse />
         </Route>
       </Switch>
     </div>
