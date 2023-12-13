@@ -28,7 +28,9 @@ const Courses = () => {
           }}
         >
           <Link to="/newCourse">
-            <Button variant="primary">Add New Course</Button>
+            <Button className="m-4 rounded-2" variant="primary">
+              Add New Course
+            </Button>
           </Link>
         </div>
       </div>
