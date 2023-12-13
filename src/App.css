@@ -106,6 +106,36 @@
   gap: 20px;
 }
 /* End Courses */
+/*  */
+.courseInfo {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: white;
+  display: flex;
+}
+.courseInfo .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  flex: 70%;
+}
+.courseInfo img {
+  width: 100%;
+}
+.courseInfo h2 {
+  font-weight: bold;
+  color: #dd8811;
+}
+.courseInfo span {
+  font-weight: bold;
+}
+.courseInfo .star {
+  color: #ffdd00;
+  font-size: large;
+}
+/*  */
 /* Start */
 @media (max-width: 767px) {
   .wrapper {

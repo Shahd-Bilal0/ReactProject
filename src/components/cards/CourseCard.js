@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 const CourseCard = ({ course }) => {
   return (
     <div className="course">
@@ -8,7 +9,10 @@ const CourseCard = ({ course }) => {
         <p className="description">{course.description}</p>
       </div>
       <div className="info">
-        <span className="title">Course Info</span>
+        <Link to={`/CourseInfo/${course.id}`} className="title">
+          Course Info
+        </Link>
+
         <span>
           <FontAwesomeIcon className="icon" icon="fa-user" />
           {course.user}

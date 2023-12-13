@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const TasksCard = ({ tasks }) => {
   return (
     <div className="tasks">
-      <div class="info">
+      <div className="info">
         <h3>{tasks.title}</h3>
         <p>{tasks.description}</p>
       </div>

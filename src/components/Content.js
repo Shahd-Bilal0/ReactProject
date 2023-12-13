@@ -3,18 +3,10 @@ import Dashboard from "./pages/Dashboard";
 import Courses from "./pages/Courses";
 import Profile from "./pages/Profile";
 import Projects from "./pages/Projects";
-import { Route, Switch, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import CourseInfo from "./pages/CourseInfo";
+import { Route, Switch } from "react-router-dom";
+
 const Content = () => {
-  const location = useLocation();
-  const [title, setTitle] = useState("Dashboard");
-
-  useEffect(() => {
-    const pathParts = location.pathname.split("/");
-    console.log(location.pathname);
-    setTitle(pathParts[pathParts.length - 1] || "Dashboard");
-  }, [location.pathname]);
-
   return (
     <div className="content">
       <div className="head">
@@ -22,7 +14,6 @@ const Content = () => {
           <FontAwesomeIcon icon="fa-bell" />
         </span>
       </div>
-      <h1 className="pageTitle">{title}</h1>
       <Switch>
         <Route exact path="/">
           <Dashboard />
@@ -35,6 +26,9 @@ const Content = () => {
         </Route>
         <Route exact path="/projects">
           <Projects />
+        </Route>
+        <Route exact path="/CourseInfo/:id">
+          <CourseInfo />
         </Route>
       </Switch>
     </div>
