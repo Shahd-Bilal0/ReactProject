@@ -50,5 +50,90 @@
       "label": "Deleted",
       "color": "red"
     }
+  ],
+  "newsData": [
+    {
+      "img": "img/news-01.png",
+      "title": "Created SASS Section",
+      "description": "New SASS Examples & Tutorials",
+      "day": "3 Days Ago"
+    },
+    {
+      "img": "img/news-02.png",
+      "title": "Changed The Design",
+      "description": "A Brand New Website Design",
+      "day": "5 Days Ago"
+    },
+    {
+      "img": "img/news-03.png",
+      "title": "Team Increased",
+      "description": "3 Developers Joined The Team",
+      "day": "7 Days Ago"
+    },
+    {
+      "img": "img/news-04.png",
+      "title": "Added Payment Gateway",
+      "description": "Many New Payment Gateways Added",
+      "day": "9 Days Ago"
+    }
+  ],
+  "tasksData": [
+    {
+      "title": "Record One New Video",
+      "description": "Record Python Create Exe Project"
+    },
+    {
+      "title": "Write Article",
+      "description": "Write Low Level vs High Level Languages"
+    },
+    {
+      "title": "Finish Project",
+      "description": "Publish Academy Programming Project"
+    },
+    {
+      "title": "Attend The Meeting",
+      "description": "Attend The Project Business Analysis Meeting"
+    },
+    {
+      "title": "Finish Lesson",
+      "description": "Finish Teaching Flex Box"
+    }
+  ],
+  "coursesData": [
+    {
+      "img": "img/course-01.jpg",
+      "title": "Mastering Web Design",
+      "description": "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      "user": 950,
+      "price": 165
+    },
+    {
+      "img": "img/course-02.jpg",
+      "title": "Data Structure And Algorithms",
+      "description": "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      "user": 1150,
+      "price": 210
+    },
+    {
+      "img": "img/course-03.jpg",
+      "title": "Responsive Web Design",
+      "description": "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      "user": 850,
+      "price": 65
+    },
+    {
+      "img": "img/course-04.jpg",
+      "title": "Mastering Python",
+      "description": "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      "user": 50,
+      "price": 160
+    },
+    {
+      "img": "img/course-05.jpg",
+      "title": "PHP Examples",
+      "description": "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      "user": 550,
+      "price": 15
+    }
   ]
 }
