@@ -135,37 +135,53 @@
   font-size: large;
 }
 /* Add new course form */
-.create {
-  max-width: 400px;
-  margin: 0 auto;
+.new {
   text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: white;
+  display: flex;
 }
-.create label {
+.new .image {
+  background-color: #ffaa33c4;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.new img {
+  width: 70%;
+}
+.addCourse {
+  padding: 20px;
+  flex: 1;
+}
+.addCourse label {
   text-align: left;
   display: block;
+  font-weight: bold;
+  color: #dd8811;
 }
-.create h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
-}
-.create input,
-.create textarea,
-.create select {
+.addCourse input,
+.addCourse textarea,
+.addCourse select {
   width: 100%;
   padding: 6px 10px;
-  margin: 10px 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
   border: 1px solid #ddd;
-  box-sizing: border-box;
+  background-color: #7f848b0f;
+  border-radius: 5px;
   display: block;
 }
-.create button {
-  background: #f1356d;
+.addCourse button {
+  background: #3173ff;
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
+  margin: 10px 0;
 }
 @media (max-width: 767px) {
   .wrapper {
@@ -201,5 +217,8 @@
     gap: 10px;
     align-items: center;
     text-align: center;
+  }
+  .new .image {
+    display: none;
   }
 }
