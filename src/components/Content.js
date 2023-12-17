@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import CourseInfo from "./pages/CourseInfo";
 import NewCourse from "./pages/NewCourse";
 import { Route, Switch } from "react-router-dom";
+import Error404 from "./pages/Error404";
 
 const Content = () => {
   return (
@@ -19,20 +20,23 @@ const Content = () => {
         <Route exact path="/">
           <Dashboard />
         </Route>
-        <Route exact path="/courses">
+        <Route path="/courses">
           <Courses />
         </Route>
-        <Route exact path="/profile">
+        <Route path="/profile">
           <Profile />
         </Route>
-        <Route exact path="/projects">
+        <Route path="/projects">
           <Projects />
         </Route>
-        <Route exact path="/courseInfo/:id">
+        <Route path="/courseInfo/:id">
           <CourseInfo />
         </Route>
-        <Route exact path="/newCourse">
+        <Route path="/newCourse">
           <NewCourse />
+        </Route>
+        <Route path="*">
+          <Error404 />
         </Route>
       </Switch>
     </div>
