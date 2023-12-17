@@ -1,7 +1,9 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 
 const NewCourse = () => {
+  const fileInputField = useRef(null);
+  const [files, setFiles] = useState({});
   const [title, setTitle] = useState("add title");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("img/course-04.jpg");
@@ -50,6 +52,10 @@ const NewCourse = () => {
             />
           </label>
 
+          <label>
+            Course Image URL:
+            <input type="file" ref={fileInputField} />
+          </label>
           <label>
             Course Image URL:
             <input

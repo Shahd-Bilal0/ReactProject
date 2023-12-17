@@ -1,13 +1,23 @@
 import { useParams } from "react-router-dom";
 import FetchData from "../../FetchData";
 import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useHistory } from "react-router-dom";
 const CourseInfo = () => {
+  const hist = useHistory();
   const { id } = useParams();
   const {
     data: course,
     isPending,
     error,
   } = FetchData("http://localhost:8000/coursesData/" + id);
+  const handleDelete = () => {
+    fetch("http://localhost:8000/coursesData/" + course.id, {
+      method: "DELETE",
+    }).then(() => {
+      hist.push("/courses");
+    });
+  };
   return (
     <div>
       <h1 className="pageTitle">{`Course ${+id + 1}`}</h1>
@@ -48,7 +58,13 @@ const CourseInfo = () => {
           alignItems: "center",
         }}
       >
-        <Button variant="warning">Apply Now</Button>
+        <Button variant="warning" onClick={handleDelete}>
+          Delete This Course{"  "}
+          <FontAwesomeIcon
+            icon="fa-trash-can"
+            className="delete"
+          ></FontAwesomeIcon>
+        </Button>
       </div>
     </div>
   );

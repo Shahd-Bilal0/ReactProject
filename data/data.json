@@ -144,15 +144,6 @@
       "user": 550,
       "price": 15,
       "rating": 4
-    },
-    {
-      "img": "img/course-04.jpg",
-      "title": "c++",
-      "description": "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
-      "user": "10",
-      "price": "150",
-      "rating": "3",
-      "id": 5
     }
   ]
 }
